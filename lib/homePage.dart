@@ -5,7 +5,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         centerTitle: true,
       ),
       body: Center(
@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
               },
               errorBuilder:
                   (BuildContext context, Object error, StackTrace? stackTrace) {
-                return Column(
+                return const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.error, color: Colors.red, size: 50),
@@ -46,8 +46,8 @@ class HomePage extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'Welcome to our App!',
               style: TextStyle(fontSize: 24),
             ),
