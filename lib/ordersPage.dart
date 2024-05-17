@@ -81,11 +81,11 @@ class _ProductCardState extends State<ProductCard> {
               setState(() {
                 isFavorite = !isFavorite;
               });
-              if (isFavorite) {
-                QuickAlert.show(
-                  context: context,
-                  type: QuickAlertType.success,
-                  text: 'Added to favorites',
+              if(isFavorite){
+              QuickAlert.show(
+                context: context,
+                type: QuickAlertType.success,
+                text: 'Transaction Completed Successfully!',
                 );
               }
             },
